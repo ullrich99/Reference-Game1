@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://dhus2ufge6v2r"]
+[gd_scene load_steps=3 format=3 uid="uid://dhus2ufge6v2r"]
 
 [ext_resource type="Script" path="res://Scripts/UI/SceneLoadButton.cs" id="1_piadx"]
+[ext_resource type="Script" path="res://Scripts/UI/PlayerNameInput.cs" id="2_5qkuj"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -35,4 +36,20 @@ text = "Spiel starten"
 script = ExtResource("1_piadx")
 Path = "res://Scenes/BasicFirstLevel.tscn"
 
+[node name="TextEdit" type="TextEdit" parent="Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -49.0
+offset_top = -50.0
+offset_right = 51.0
+offset_bottom = -23.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("2_5qkuj")
+
 [connection signal="pressed" from="Panel/Button" to="Panel/Button" method="LoadScene"]
+[connection signal="text_changed" from="Panel/TextEdit" to="Panel/TextEdit" method="NameChanged"]

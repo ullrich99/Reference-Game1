@@ -5,6 +5,7 @@ public partial class PlayerBaseControl : CsgSphere3D
 {
 	[Export]
 	public float Speed = 5;
+	
 	// Called when the node enters the scene tree for the first time.
 	public override void _Ready()
 	{
@@ -22,4 +23,12 @@ public partial class PlayerBaseControl : CsgSphere3D
 		
 		
     }
+	public void collectItem(Node3D node)
+	{
+		GD.Print(node.Name);
+		PlayerUIOverlay pu = (PlayerUIOverlay) GetTree().GetFirstNodeInGroup("ui");
+		pu.CurrentScore += 1;
+		node.Position += new Vector3(0, -5, 0);
+	}
+
 }

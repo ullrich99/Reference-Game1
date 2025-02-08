@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/UI/PlayerUIOverlay.cs" id="1_1rn6s"]
 
-[node name="PlayerUiOverlay" type="Control"]
+[node name="PlayerUiOverlay" type="Control" node_paths=PackedStringArray("PlayerNameLabel", "PlayerScoreLabel") groups=["ui"]]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
@@ -10,6 +10,8 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_1rn6s")
+PlayerNameLabel = NodePath("Panel/Name")
+PlayerScoreLabel = NodePath("Panel/Highscore")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -18,8 +20,22 @@ anchor_right = 1.0
 offset_bottom = 76.0
 grow_horizontal = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
-layout_mode = 0
+[node name="Name" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+offset_left = 5.0
 offset_right = 146.0
 offset_bottom = 40.0
 text = "Player"
+
+[node name="Highscore" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -161.0
+offset_right = -7.0
+offset_bottom = 40.0
+grow_horizontal = 0
+text = "Highscore: 00"
+fit_content = true
+text_direction = 2

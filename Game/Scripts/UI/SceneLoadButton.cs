@@ -19,5 +19,7 @@ public partial class SceneLoadButton : Button
     {
         if (!string.IsNullOrEmpty(Path))
             GetTree().ChangeSceneToFile(Path);
+
+       
     }
 }

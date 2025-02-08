@@ -1,12 +1,31 @@
-[gd_scene load_steps=4 format=3 uid="uid://hna5wcscoilo"]
+[gd_scene load_steps=9 format=3 uid="uid://hna5wcscoilo"]
 
 [ext_resource type="Script" path="res://Scripts/Controls/PlayerBaseControl.cs" id="1_3m6i4"]
+[ext_resource type="PackedScene" uid="uid://ctpg7bwe70djj" path="res://Scenes/UIs/PlayerUIOverlay.tscn" id="2_ahkgp"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rsx5"]
 albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbxv8"]
 albedo_color = Color(0, 0.32549, 0.184314, 1)
+emission_enabled = true
+emission = Color(0.360784, 0.470588, 0, 1)
+emission_energy_multiplier = 5.0
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pwvdk"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_3jreg"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_a4gk3"]
+albedo_color = Color(0.580392, 0.470588, 0, 1)
+emission_enabled = true
+emission = Color(0.92549, 0.752941, 0, 1)
+emission_energy_multiplier = 2.91
+
+[sub_resource type="Environment" id="Environment_j68tc"]
+background_mode = 1
+background_color = Color(0.0705882, 0.188235, 0.211765, 1)
+glow_enabled = true
 
 [node name="Node3D" type="Node3D"]
 
@@ -20,8 +39,30 @@ material = SubResource("StandardMaterial3D_jbxv8")
 script = ExtResource("1_3m6i4")
 Speed = 10.0
 
+[node name="Area3D" type="Area3D" parent="PlayerBase"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerBase/Area3D"]
+shape = SubResource("BoxShape3D_pwvdk")
+
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.837156, 0.546964, 0, -0.546964, 0.837156, 0, 3.3283, 5.47207)
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.825478, 0.564434, 0, -0.564434, 0.825478, 0, 14.5043, 0)
+
+[node name="PlayerUiOverlay" parent="." instance=ExtResource("2_ahkgp")]
+
+[node name="PickupItem" type="CharacterBody3D" parent="."]
+transform = Transform3D(0.3, 0, 0, 0, 0.3, 0, 0, 0, 0.3, 1.39321, 0.288379, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PickupItem"]
+shape = SubResource("CapsuleShape3D_3jreg")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="PickupItem"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+material = SubResource("StandardMaterial3D_a4gk3")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_j68tc")
+
+[connection signal="body_entered" from="PlayerBase/Area3D" to="PlayerBase" method="collectItem"]

@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerUIOverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\UI\\PlayerUIOverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|c:\\users\\lullr\\onedrive\\dokumente\\github\\reference-game1\\game\\scripts\\controls\\playerbasecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|solutionrelative:scripts\\controls\\playerbasecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|c:\\users\\lullr\\onedrive\\dokumente\\github\\reference-game1\\game\\scripts\\ui\\sceneloadbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|solutionrelative:scripts\\ui\\sceneloadbutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|c:\\users\\lullr\\onedrive\\dokumente\\github\\reference-game1\\game\\scripts\\controls\\playerbasecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|solutionrelative:scripts\\controls\\playerbasecontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerNameInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Scripts\\UI\\PlayerNameInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|c:\\users\\lullr\\onedrive\\dokumente\\github\\reference-game1\\game\\scripts\\logics\\savesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|solutionrelative:scripts\\logics\\savesystemlogic.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|c:\\users\\lullr\\onedrive\\dokumente\\github\\reference-game1\\game\\scripts\\ui\\playeruioverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C360273-563F-4565-9887-3104CD322270}|HighscoreGame.csproj|solutionrelative:scripts\\ui\\playeruioverlay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,17 +30,43 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "PlayerNameInput.cs",
+              "DocumentMoniker": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerNameInput.cs",
+              "RelativeDocumentMoniker": "Scripts\\UI\\PlayerNameInput.cs",
+              "ToolTip": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerNameInput.cs",
+              "RelativeToolTip": "Scripts\\UI\\PlayerNameInput.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T15:10:02.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaveSystemLogic.cs",
+              "DocumentMoniker": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\Logics\\SaveSystemLogic.cs",
+              "RelativeDocumentMoniker": "Scripts\\Logics\\SaveSystemLogic.cs",
+              "ToolTip": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\Logics\\SaveSystemLogic.cs",
+              "RelativeToolTip": "Scripts\\Logics\\SaveSystemLogic.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwAgAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T14:11:14.928Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerUIOverlay.cs",
               "DocumentMoniker": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerUIOverlay.cs",
               "RelativeDocumentMoniker": "Scripts\\UI\\PlayerUIOverlay.cs",
               "ToolTip": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\PlayerUIOverlay.cs",
               "RelativeToolTip": "Scripts\\UI\\PlayerUIOverlay.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAABAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T11:51:50.374Z",
               "EditorCaption": ""
@@ -45,20 +79,20 @@
               "RelativeDocumentMoniker": "Scripts\\UI\\SceneLoadButton.cs",
               "ToolTip": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\UI\\SceneLoadButton.cs",
               "RelativeToolTip": "Scripts\\UI\\SceneLoadButton.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAwBIAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T11:42:33.817Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayerBaseControl.cs",
               "DocumentMoniker": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\Controls\\PlayerBaseControl.cs",
               "RelativeDocumentMoniker": "Scripts\\Controls\\PlayerBaseControl.cs",
               "ToolTip": "C:\\Users\\lullr\\OneDrive\\Dokumente\\GitHub\\Reference-Game1\\Game\\Scripts\\Controls\\PlayerBaseControl.cs",
               "RelativeToolTip": "Scripts\\Controls\\PlayerBaseControl.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAACAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-08T11:20:44.239Z",
               "EditorCaption": ""
