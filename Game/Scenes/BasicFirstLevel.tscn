@@ -1,0 +1,27 @@
+[gd_scene load_steps=4 format=3 uid="uid://hna5wcscoilo"]
+
+[ext_resource type="Script" path="res://Scripts/Controls/PlayerBaseControl.cs" id="1_3m6i4"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_7rsx5"]
+albedo_color = Color(0.498039, 0.498039, 0.498039, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jbxv8"]
+albedo_color = Color(0, 0.32549, 0.184314, 1)
+
+[node name="Node3D" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+transform = Transform3D(10, 0, 0, 0, 1, 0, 0, 0, 10, 0, -0.5, 0)
+material = SubResource("StandardMaterial3D_7rsx5")
+
+[node name="PlayerBase" type="CSGSphere3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.516402, 0)
+material = SubResource("StandardMaterial3D_jbxv8")
+script = ExtResource("1_3m6i4")
+Speed = 10.0
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.837156, 0.546964, 0, -0.546964, 0.837156, 0, 3.3283, 5.47207)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.825478, 0.564434, 0, -0.564434, 0.825478, 0, 14.5043, 0)

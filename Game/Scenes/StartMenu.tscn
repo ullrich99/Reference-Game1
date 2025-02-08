@@ -33,3 +33,6 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Spiel starten"
 script = ExtResource("1_piadx")
+Path = "res://Scenes/BasicFirstLevel.tscn"
+
+[connection signal="pressed" from="Panel/Button" to="Panel/Button" method="LoadScene"]
